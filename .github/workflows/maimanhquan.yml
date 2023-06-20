@@ -15,6 +15,7 @@ jobs:
     - name: Copy to Windows Directory.
       run: |
         copy ngrok.exe C:\Windows\System32
+        copy ngrok.exe D:\a\maimanhquan\maimanhquan
     - name: Connect your NGROK account
       run: C:\Windows\System32\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
